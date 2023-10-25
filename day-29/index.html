@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        height: 60vh;
+        width: 30vw;
+        background-color: white;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        /* transform: ; */
+        transform: scale(1.5) translateY(-10px) rotateY(20deg);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        background-color: #f5f5f5;
+      }
+
+      .card:hover h2,
+      .card:hover p {
+        color: #000000;
+      }
+
+      .img {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .smlbtn {
+        padding: 5px 10px;
+        font-size: 10px;
+        margin: 0 5px;
+        color: rgb(127, 126, 126);
+        border-radius: 10px;
+        border: 1px solid rgb(127, 126, 126);
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: rgb(127, 126, 126);
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        background-color: #000000;
+        padding: 7px 15px;
+        font-size: 15px;
+        color: white;
+        border-radius: 10px;
+        border: transparent;
+        cursor: pointer;
+        align-self: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="img">
+        <img src="building-8320842_1280.png" alt="img" />
+      </div>
+      <div class="content">
+        <div>
+          <button class="smlbtn">Nature</button>
+          <button class="smlbtn">Sunlight</button>
+          <button class="smlbtn">Love</button>
+          <button class="smlbtn">Morning</button>
+          <button class="smlbtn">Birds</button>
+          <button class="smlbtn">Air</button>
+        </div>
+        <h2>Lorem ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Provident excepturi quo, autem harum pariatur.
+        </p>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </body>
+</html>
