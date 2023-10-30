@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4 - Multi Color Website</title>
+    <style>
+      :root {
+        --primary-bg: #3498db;
+        --secondary-bg: #2c3e50;
+        --text-color: white;
+      }
+
+      .navbar {
+        background-color: var(--primary-bg);
+        color: var(--text-color);
+        text-align: center;
+        padding: 10px;
+      }
+      .navbar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .navbar ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      .navbar ul li a {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 8px 16px;
+        background-color: var(--secondary-bg);
+        border-radius: 4px;
+      }
+
+      .navbar ul li a:hover {
+        background-color: var(--text-color);
+        color: var(--primary-bg);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
