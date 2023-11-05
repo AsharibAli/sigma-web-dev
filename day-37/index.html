@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+
+    <style>
+               :root {
+            --boxes: rgb(240, 78, 78);
+            --secboxes: rgb(240, 255, 35);
+            --textcolor: rgb(255, 255, 255);
+            --Headtextcolor: rgb(255, 0, 0);
+            --backgrond: rgb(245, 66, 252);
+            --navbar: rgb(110, 1, 114);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--backgrond);
+        }
+
+        .head {
+            background-color: var(--navbar);
+            position: sticky;
+            top: 0px;
+        }
+
+        .head nav ul li {
+            display: inline;
+            padding: 30px;
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--textcolor);
+            
+            
+
+
+
+        }
+
+        .mainbox {
+            border: 2px solid blue;
+            background-color: var(--boxes);
+            margin: 20px;
+            padding: 30px;
+            height: 900px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            border: 2px solid rgb(87, 87, 87);
+            padding: 20px;
+            margin: 15px;
+            width: 600px;
+            height: 820px;
+
+        }
+
+        .box h2,
+        p {
+            text-decoration: double;
+        }
+
+
+        .box:last-child {
+            background-color: rgb(38, 240, 172);
+        }
+
+        .box h2 {
+            color: blue;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .box p {
+            text-align: justify;
+        }
+
+        .radiusbox {
+            border: 2px solid green;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+            background-color: var(--secboxes);
+            display: grid;
+            text-align: center;
+
+        }
+
+        .radiusbox h2 {
+            color: rgb(255, 0, 0);
+
+        }
+
+        .copyright {
+            text-align: center;
+            color: white;
+        }
+
+        .footer {
+            background-color: gray;
+            text-align: center;
+            padding: 5px;
+            margin-top: 10px;
+            font-weight: 600;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-top: 3px solid rgb(0, 14, 95);
+        }
+
+
+        img {
+            position: fixed;
+            top: 700px;
+            right: 30px;
+            width: 72px;
+            background-color: white;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <div class="head">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Batches</li>
+                    <li>Courses</li>
+                    <li>Notes</li>
+                    <li>Login</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </head>
+        </div>
+        <div class="main_section">
+            <div class="mainbox">
+                <div class="box">
+                    <h2>This is the first box</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis error quia earum rem repellat
+                        voluptatum commodi nemo placeat corporis magni? Nostrum, dolor. Iusto, unde enim eum dolores
+                        quibusdam necessitatibus veniam accusamus numquam vel neque quidem perspiciatis harum magnam,
+                      ?.</p>
+                </div>
+                <div class="box">
+                    <h2>This is the second box</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ipsam voluptates,
+                        blanditiis earum beatae iure quibusdam, non architecto repudiandae corrupti quos error dolore.
+                        Illum dolore explicabo obcaecati voluptatem atque, corporis ad odit, laudantium magni quas
+                       </p>
+                </div>
+            </div>
+            <div class="radiusbox">
+                <h2>Sigma Web Devolopment Course [Hurry Bhai] </h2>
+                <p>This is the 5th Assignment of web devolopment course</p>
+            </div>
+            <div class="footer">
+                <ul>
+                    <h2>Services</h2>
+                    <li>Digital Marketing</li>
+                    <li>Graphic Designing</li>
+                    <li>Typing</li>
+                </ul>
+        </div>
+    </div>
+
+            <div class="copyright">
+                <h3>&copy; copyright with Suliman Qasmi</h3>
+            </div>
+           
+   
+    <img src="logo.jpeg" alt="This is a logo">
+
+</body>
+
+</html>

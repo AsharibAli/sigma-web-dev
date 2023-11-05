@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* External stylesheet for maintainability and performance */
+
+      /* Variables for maintaining a consistent theme */
+      :root {
+        --primary-color: #f04e4e;
+        --secondary-color: #f0ff23;
+        --text-color: #fff;
+        --header-text-color: #ff0000;
+        --background-color: #f542fc;
+        --navbar-color: #6e0172;
+      }
+
+      /* Global resets for better cross-browser consistency */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Use of system fonts for better performance and readability */
+      body {
+        background-color: var(--background-color);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+
+      /* Navigation styles */
+      .navigation ul {
+        list-style: none;
+        text-align: center;
+        background-color: var(--navbar-color);
+        padding: 1rem 0;
+      }
+
+      .navigation ul li {
+        display: inline;
+        margin: 0 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      /* Main content and article boxes */
+      .content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .box {
+        border: 2px solid #575757;
+        background-color: var(--primary-color);
+        padding: 20px;
+        margin: 15px;
+        width: calc(50% - 30px); /* Responsive width */
+        text-decoration: none;
+      }
+
+      .box h2 {
+        color: var(--header-text-color);
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .box p {
+        text-align: justify;
+      }
+
+      /* Feature box with radius */
+      .feature {
+        border: 2px solid green;
+        border-radius: 20px;
+        background-color: var(--secondary-color);
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #888;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        border-top: 3px solid #000e5f;
+      }
+
+      /* Footer navigation styling */
+      .footer-nav h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-nav ul {
+        list-style-type: none;
+      }
+
+      .footer-nav ul li {
+        line-height: 2;
+        font-weight: 400;
+      }
+
+      /* Positioning the logo image on the screen */
+      .fixed-logo {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        width: 50px; /* Adjusted for a more standard size */
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+
+      /* Copyright section styling */
+      copyright {
+        text-align: center;
+        color: var(--text-color);
+        padding: 10px 0;
+        font-size: 0.9rem;
+      }
+
+      /* Responsive design adjustments */
+      @media screen and (max-width: 768px) {
+        .content {
+          flex-direction: column;
+        }
+
+        .box {
+          width: auto; /* Full width on smaller screens */
+        }
+      }
+
+      /* Additional hover effects for interactivity */
+      .navigation ul li:hover,
+      .footer-nav ul li:hover {
+        color: var(--secondary-color);
+        cursor: pointer;
+      }
+
+      /* Improving the visual hierarchy for headings */
+      h1,
+      h2,
+      h3 {
+        color: var(--header-text-color);
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Enhanced Web Layout</title>
+        <!-- Use a link to an external stylesheet for better organization -->
+      </head>
+
+      <body>
+        <header>
+          <!-- Use semantic tags for better SEO and readability -->
+          <nav class="navigation">
+            <ul>
+              <li>Home</li>
+              <li>Services</li>
+              <li>Batches</li>
+              <li>Courses</li>
+              <li>Notes</li>
+              <li>Login</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="main_section">
+          <!-- Use flexbox for responsive layout -->
+          <section class="content">
+            <article class="box">
+              <h2>This is the first box</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
+              </p>
+            </article>
+            <article class="box">
+              <h2>This is the second box</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. ...
+              </p>
+            </article>
+          </section>
+
+          <!-- Feature section with clear class naming -->
+          <aside class="feature">
+            <h2>Sigma Web Development Course [Hurry Up]</h2>
+            <p>This is the 5th Assignment of web development course.</p>
+          </aside>
+
+          <!-- Footer with nested navigation -->
+          <footer>
+            <nav class="footer-nav">
+              <h2>Services</h2>
+              <ul>
+                <li>Digital Marketing</li>
+                <li>Graphic Designing</li>
+                <li>Typing</li>
+              </ul>
+            </nav>
+          </footer>
+        </main>
+
+        <!-- Use alt text for accessibility -->
+        <img src="logo.jpeg" alt="Company Logo" class="fixed-logo" />
+
+        <!-- Copyright notice -->
+        <div class="copyright">
+          <p>&copy; 2023 by Asharib Ali. All rights reserved.</p>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
