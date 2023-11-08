@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraEdit Header</title>
+    <style>
+      /* General reset for padding and margin to avoid browser inconsistencies */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* Flex container for the header with alignment and spacing */
+      .header {
+        display: flex;
+        justify-content: space-between; /* Align items to the main axis */
+        align-items: center; /* Align items to the cross axis */
+        background-color: #333; /* Background color of the header */
+        padding: 10px 20px; /* Padding around the content */
+      }
+
+      /* Logo styling */
+      .logo {
+        display: flex;
+        align-items: center;
+        color: #ffcc00; /* Logo color */
+        font-size: 24px; /* Logo font size */
+        font-weight: bold; /* Logo font weight */
+        text-decoration: none; /* No underline for the logo link */
+      }
+
+      /* Navigation styling */
+      .nav {
+        display: flex;
+        list-style: none; /* No bullets for the list */
+      }
+
+      /* Individual navigation items */
+      .nav-item {
+        padding: 0 15px; /* Padding around the navigation items */
+        color: white; /* Color of the navigation items */
+        text-decoration: none; /* No underline for the navigation links */
+      }
+
+      /* Hover effect for navigation items */
+      .nav-item:hover {
+        border-bottom: 2px solid #ffcc00; /* Bottom border on hover */
+      }
+
+      /* Cart icon container */
+      .cart {
+        color: white; /* Color of the cart icon */
+        cursor: pointer; /* Pointer cursor for the clickable cart icon */
+      }
+
+      /* Placeholder for JavaScript interactivity, if any */
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Logo -->
+      <a href="#" class="logo">CodeWithHarry</a>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav">
+          <li><a href="#" class="nav-item">Products</a></li>
+          <li><a href="#" class="nav-item">Pricing</a></li>
+          <li><a href="#" class="nav-item">Resources</a></li>
+          <li><a href="#" class="nav-item">About us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Icon -->
+      <div class="cart">🛒</div>
+    </header>
+
+    <script>
+      // Placeholder for any JavaScript if needed
+    </script>
+  </body>
+</html>
