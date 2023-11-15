@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise-8: Bounce Animation</title>
     <style>
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0) translateX(0);
+        }
+        25% {
+          transform: translateY(-500px) translateX(100px);
+        }
+        50% {
+          transform: translateY(0) translateX(200px);
+        }
+        75% {
+          transform: translateY(-500px) translateX(300px);
+        }
+        100% {
+          transform: translateY(0) translateX(400px); /* Adjust for desired distance */
+        }
+        200% {
+          transform: translateY(-500px) translateX(500);
+        }
+      }
+
       .box {
         height: 121px;
         width: 121px;
@@ -13,7 +35,9 @@
         position: absolute;
         bottom: 0;
         left: 0;
+        animation: bounce 8s ease-in-out infinite;
       }
+
       .container {
         position: relative;
         height: 80vh;
