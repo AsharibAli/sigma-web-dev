@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Object fit and Position</title>
+    <style>
+      .container {
+        height: 466px;
+        width: 488px;
+        border: 2px solid black;
+        background-color: azure;
+        background-position: center center;
+        background-clip: border-box;
+        background-image: url("https://media4.manhattan-institute.org/sites/cj/files/concept-of-hero.jpg");
+      }
+      img {
+        height: 466px;
+        width: 488px;
+        /* object-fit: contain; */
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img
+        src="https://media4.manhattan-institute.org/sites/cj/files/concept-of-hero.jpg"
+        alt="This is an image"
+      /> -->
+    </div>
+  </body>
+</html>
