@@ -3,15 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Factoral Exercise</title>
   </head>
   <body>
-    <!-- 
-        Write a program to calculate factorial of a number using reduce and using for loops
+    <script>
+      // Function to calculate factorial using reduce
+      function calculateFactorialWithReduce(number) {
+        // Create an array of numbers from 1 to the given number
+        const numbers = Array.from({ length: number }, (_, index) => index + 1);
 
+        // Use reduce to multiply all the numbers in the array
+        const factorial = numbers.reduce(
+          (accumulator, currentValue) => accumulator * currentValue,
+          1
+        );
 
-        6! = 6*5*4*3*2*1
+        // Return the factorial
+        return factorial;
+      }
 
-     -->
+      // Function to calculate factorial using for loop
+      function calculateFactorialWithForLoop(number) {
+        // Initialize the factorial to 1
+        let factorial = 1;
+
+        // Iterate from 1 to the given number
+        for (let i = 1; i <= number; i++) {
+          // Multiply the factorial by the current number
+          factorial *= i;
+        }
+
+        // Return the factorial
+        return factorial;
+      }
+
+      // Test the functions
+      const number = 15;
+      const factorialWithReduce = calculateFactorialWithReduce(number);
+      const factorialWithForLoop = calculateFactorialWithForLoop(number);
+
+      // Print the results
+      console.log(
+        `Factorial of ${number} using reduce: ${factorialWithReduce}`
+      );
+      console.log(
+        `Factorial of ${number} using for loop: ${factorialWithForLoop}`
+      );
+    </script>
   </body>
 </html>
