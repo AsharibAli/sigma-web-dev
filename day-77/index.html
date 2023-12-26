@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Exercise 13 - Solution</title>
+    <style>
+      .card {
+        display: flex;
+        border: 2px solid black;
+        width: 900px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        margin: 12px;
+      }
+      .image img {
+        width: 200px;
+      }
+
+      .text h1,
+      p {
+        padding-top: 2px 0;
+      }
+      .image {
+        position: relative;
+      }
+
+      .image .capsule {
+        position: absolute;
+        bottom: 4px;
+        z-index: 10;
+        right: 5px;
+        background-color: black;
+        color: white;
+        opacity: 0.9;
+        padding: 3px;
+        margin: 5px;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
