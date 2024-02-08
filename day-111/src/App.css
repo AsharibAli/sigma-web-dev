@@ -1,0 +1,13 @@
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.post-card {
+  box-shadow: 0 4px 8px rgb(255, 5, 5);
+  pad: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
