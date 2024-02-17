@@ -1,1 +1,1 @@
-# Sigma-Web-Dev-Course
+# Sigma-Web-Development-Course
